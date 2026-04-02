@@ -1,4 +1,4 @@
-# Project 2 - Classification of Dermal Medical Imaging
+# Project 3 - Classification of Dermal Medical Imaging
 ## Software 
 
 Primary Software: Jupyter Notebook  
