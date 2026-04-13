@@ -35,10 +35,13 @@ data/
 
 outputs/
 ├── EDA/
-│   ├── 
-│   ├──  
-│   ├──
-│   └──
+│   ├── age-distribution.png
+│   ├── age_vs_dx_heatmap.png
+│   ├── class_distribution.png
+│   ├── localization_distribution.png
+│   ├── localization_vs_dx_heatmap.png
+│   ├── sex_distribution.png
+│   └── sex_vs_dx_heatmap.png
 ├── classification_reports 
 │   ├── image_only_classification_report.png
 │   ├── mobilenet_image_only_5fold_summary.png
