@@ -132,6 +132,7 @@ README.md
 3. Create confusion matrix and save as an image in confusion matrices folder in outputs folder on Githib
 
 ### Resnet Models 
+(structurally identical to MobileNetV2 model)
 #### Cleaning 
 1. Using the metadata with the image path added, check for missing values under columns: image_path, dx, and localization
 2. Fill missing values for age with median
@@ -142,43 +143,40 @@ README.md
 ##### Stratified K-Fold Cross-Validation 
 1. Convert boolean columns to integers (0, 1)
 2. Create a stratified K-Fold cross-Validation
-3. For each fold, split into training and test set
+3. For each fold, split into training and validation set
 4. Build fold dataset containing metadata features, image features, and labels
 5. Append each fold dictionary to a fold list
 ##### Image Preprocessing and Feature Extraction  
 1. Load pretrained CNN feature extractor ResNet50  
 2. Define extract_features_batch for batch of images to load and preprocess images, run the images through the model, collect the feature vectors for the images, and stack all the results into one array  
 ##### Classifier  
-1. Create lists for macro f1, classification reports, and confusion matrices
-2. Define class labels   
-3. For each training split, extract images features and extract metadata features  
-4. Combine image and metadata features into one feautre vector
-5. Compute class_weight so that there is no class imbalance
-6. define the model and train with early stopping, class weights and validation data
+1. Create lists for macro f1, classification reports, and confusion matrices  
+2. For each fold, extract images features and extract metadata features  
+3. Combine image and metadata features into one feature vector
+4. Compute class_weight so that there is no class imbalance
+5. Define the model and train with early stopping, class weights and validation data
 ##### Model Evaluation 
 1. Compute the classifcation report with precision, recall, and f1 score, and macro f1 score and save as an image in classification_report folder in outputs folder on Github  
 3. Create confusion matrix and save as an image in confusion matrices folder in outputs folder on Githib
 #### Image-Only Classifier
 (Repeat as above without metadata)
 ##### Stratified K-Fold Cross-Validation 
-1. Convert boolean columns to integers (0, 1)
-2. Create a stratified K-Fold cross-Validation
-3. For each fold, split into training and test set
-4. Build fold dataset containing image features, and labels
-5. Append each fold dictionary to a fold list
+1. Create a stratified K-Fold cross-Validation
+2. For each fold, split into training and validation set
+3. Build fold dataset containing image features, and labels
+4. Append each fold dictionary to a fold list
 ##### Image Preprocessing and Feature Extraction  
 1. Load pretrained CNN feature extractor MobileNetV2  
 2. Define extract_features_batch for batch of images to load and preprocess images, run the images through the model, collect the feature vectors for the images, and stack all the results into one array  
 ##### Classifier  
-1. Create lists for macro f1, classification reports, and confusion matrices  
-2. For each training split, extract images features and extract metadata features  
-3. Combine image and metadata features into one feautre vector
-4. Compute class_weight so that there is no class imbalance
-5. define the model and train with early stopping, class weights and validation data
+1. Create lists for macro f1, classification reports, and confusion matrices
+2. Define class labels
+4. For each fold split, extract images features
+6. Compute class_weight so that there is no class imbalance
+7. define the model and train with early stopping, class weights and validation data
 ##### Model Evaluation 
 1. Compute the classifcation report with precision, recall, and f1 score, and macro f1 score and save as an image in classification_report folder in outputs folder on Github  
 3. Create confusion matrix and save as an image in confusion matrices folder in outputs folder on Githib
-
 
 ## Note
 
