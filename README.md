@@ -100,8 +100,9 @@ README.md
 4. Build fold dataset containing metadata features, image features, and labels
 5. Append each fold dictionary to a fold list
 ##### Image Preprocessing and Feature Extraction  
-1. Load pretrained CNN feature extractor MobileNetV2  
-2. Define extract_features_batch for batch of images to load and preprocess images, run the images through the model, collect the feature vectors for the images, and stack all the results into one array  
+1. Load pretrained CNN feature extractor MobileNetV2
+2. Define load_and_preprocess_image to covert and resize images for model  
+3. Define extract_features_batch for batch of images to load and preprocess images, run the images through the model, collect the feature vectors for the images, and stack all the results into one array  
 ##### Classifier  
 1. Create lists for macro f1, classification reports, and confusion matrices  
 2. For each fold, extract images features and extract metadata features  
@@ -119,8 +120,9 @@ README.md
 3. Build fold dataset containing image features, and labels
 4. Append each fold dictionary to a fold list
 ##### Image Preprocessing and Feature Extraction  
-1. Load pretrained CNN feature extractor MobileNetV2  
-2. Define extract_features_batch for batch of images to load and preprocess images, run the images through the model, collect the feature vectors for the images, and stack all the results into one array  
+1. Load pretrained CNN feature extractor MobileNetV2
+2. Define load_and_preprocess_image to covert and resize images for model  
+3. Define extract_features_batch for batch of images to load and preprocess images, run the images through the model, collect the feature vectors for the images, and stack all the results into one array  
 ##### Classifier  
 1. Create lists for macro f1, classification reports, and confusion matrices
 2. Define class labels
@@ -148,7 +150,8 @@ README.md
 5. Append each fold dictionary to a fold list
 ##### Image Preprocessing and Feature Extraction  
 1. Load pretrained CNN feature extractor ResNet50  
-2. Define extract_features_batch for batch of images to load and preprocess images, run the images through the model, collect the feature vectors for the images, and stack all the results into one array  
+2. Define load_and_preprocess_image to covert and resize images for model  
+3. Define extract_features_batch for batch of images to load and preprocess images, run the images through the model, collect the feature vectors for the images, and stack all the results into one array  
 ##### Classifier  
 1. Create lists for macro f1, classification reports, and confusion matrices  
 2. For each fold, extract images features and extract metadata features  
@@ -166,8 +169,9 @@ README.md
 3. Build fold dataset containing image features, and labels
 4. Append each fold dictionary to a fold list
 ##### Image Preprocessing and Feature Extraction  
-1. Load pretrained CNN feature extractor MobileNetV2  
-2. Define extract_features_batch for batch of images to load and preprocess images, run the images through the model, collect the feature vectors for the images, and stack all the results into one array  
+1. Load pretrained CNN feature extractor MobileNetV2
+2. Define load_and_preprocess_image to covert and resize images for model  
+3. Define extract_features_batch for batch of images to load and preprocess images, run the images through the model, collect the feature vectors for the images, and stack all the results into one array  
 ##### Classifier  
 1. Create lists for macro f1, classification reports, and confusion matrices
 2. Define class labels
