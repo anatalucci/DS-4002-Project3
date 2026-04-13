@@ -12,21 +12,21 @@ Platform: macOS
 
 ```
 Data/
-├──
+├── 
 └──
 
 Outputs/
 ├── EDA/
-│   ├──
-│   ├──
+│   ├── 
+│   ├──  
 │   ├──
 │   └──
 └──
 
 Scripts/
-├──
-├──
-└──
+├── eda.ipynb
+├── mobilenetv2_modeling_and_analysis.ipynb
+└── resnet_model_and_analysis.ipynb
 
 .gitignore
 License
