@@ -33,6 +33,10 @@ Platform: macOS
 data/
 └── metadata
 
+milestones/
+├──  milestone 1
+└── milestone 2
+
 outputs/
 ├── EDA/
 │   ├── age-distribution.png
