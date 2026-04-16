@@ -43,17 +43,13 @@ outputs/
 │   ├── sex_distribution.png
 │   └── sex_vs_dx_heatmap.png
 ├── classification_reports 
-│   ├── image_only_classification_report.png
 │   ├── mobilenet_image_only_5fold_summary.png
 │   ├── mobilenet_multimodal_5fold_summary.png
-│   ├── multimodal_classification_report.png
 │   ├── resnet_image_only_5fold_summary.png
 │   └── resnet_multimodal_5fold_summary.png
 └── confusion_matrices 
-│   ├── image_only_confusion_matrix.png  
 │   ├── mobilenet_image_only_confusion_matrix_5fold_average.png
 │   ├── mobilenet_multimodal_confusion_matrix_5fold_average.png
-│   ├── multimodal_confusion_matrix.png
 │   ├── resnet_image_only_confusion_matrix_5fold_average.png
 │   └── resnet_multimodal_confusion_matrix_5fold_average.png
 
