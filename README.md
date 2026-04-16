@@ -34,8 +34,8 @@ data/
 └── metadata
 
 milestones/
-├──  milestone 1
-└── milestone 2
+├── milestone1.pdf
+└── milestone2.pdf
 
 outputs/
 ├── EDA/
